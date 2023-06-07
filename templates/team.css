@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  flex-direction: column;
+}
+
+/*teks typing*/
+.wrapper {
+  height: 20vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 24ch;
+  animation: typing 3s steps(26), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #4257b8;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*team card*/
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: #fff;
+}
+
+.team-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image img {
+  width: 100%;
+  height: auto;
+}
+
+.team-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #252839;
+}
+
+.team-info p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* tombol back */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.back-button a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  color: #252839;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button a:hover {
+  background: #f0f0f0;
+}
+
+.back-button a i {
+  margin-right: 5px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HexaPixl</title>
+    <link href="{{ url_for('static', filename='proses.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>HexaPixl</h1>
+    <form class="my-form" method="POST" action="/" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br><br>
+        
+        <!--blur-->
+        <input type="checkbox" name="blur" id="blur">
+        <label for="blur">Blur</label>
+    
+        <!--flip-->
+        <input type="checkbox" name="flip" id="flip">
+        <label for="flip">Flip</label>
+    
+        <!--mirror-->
+        <input type="checkbox" name="mirror" id="mirror">
+        <label for="mirror">Mirror</label>
+    
+        <!--invert-->
+        <input type="checkbox" name="invert" id="invert">
+        <label for="invert">Invert</label>
+    
+        <!--light-->
+        <input type="checkbox" name="light" id="light">
+        <label for="light">Light</label>
+    
+        <!--Dark-->
+        <input type="checkbox" name="dark" id="dark">
+        <label for="dark">Dark</label>
+    
+        <!--contour-->
+        <input type="checkbox" name="contour" id="contour">
+        <label for="contour">Sketchize</label>
+    
+        <br><br>
+        <input type="submit" value="Proses Gambar">
+    </form>    
+    {% if img_data %}
+        <h2>Gambar yang Telah Diproses:</h2>
+        <img src="data:image/jpeg;base64,{{ img_data }}" alt="Processed Image">
+    {% endif %}
+</body>
+</html>

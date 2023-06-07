@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Animation Text</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="HEXA.png" alt="" width="200" height="200" />
+    <p>Welcome to our image editing website!</p>
+    <p>We provide a range of <i>6 powerful features</i></p>
+    <h2 data-text="HexaPixl.">HexaPixl.</h2>
+    <button class="button">
+      <a href="http://127.0.0.1:8000" style="text-decoration: none; color: inherit">Start Editing</a>
+    </button>
+
+    
+
+    <script>
+      const button = document.querySelector('.button');
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault;
+        button.classList.add('animate');
+        setTimeout(() => {
+          button.classList.remove('animate');
+        }, 600);
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HexaPixl.</title>
+    <link rel="icon" href="HEXA (1).png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--tombol team-->
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="hexapixl.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="team.html" class="nav-link">Team</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Struktur teks-->
+    <img src="HEXA.png" alt="" width="200" height="200" />
+    <p>Welcome to our image editing website!</p>
+    <p>We provide a range of <i>6 powerful features</i></p>
+
+    <!--Teks HexaPixl-->
+    <h2 data-text="HexaPixl.">HexaPixl.</h2>
+
+    <!--tombol start , se link dg halaman proses-->
+    <button class="button">
+      <a href="http://127.0.0.1:8000" style="text-decoration: none; color: inherit">Start Editing</a>
+    </button>
+
+    <!--SCRIPT-->
+
+    <script>
+      const button = document.querySelector('.button');
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault;
+        button.classList.add('animate');
+        setTimeout(() => {
+          button.classList.remove('animate');
+        }, 600);
+      });
+    </script>
+  </body>
+</html>
